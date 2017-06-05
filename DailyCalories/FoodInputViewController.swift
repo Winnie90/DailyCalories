@@ -1,5 +1,5 @@
 //
-//  BudgetViewController.swift
+//  FoodInputViewController.swift
 //  DailyCalories
 //
 //  Created by Chris Winstanley on 05/06/2017.
@@ -8,17 +8,20 @@
 
 import UIKit
 
-class BudgetViewController: UIViewController {
+class FoodInputViewController: UIViewController {
 
-    @IBOutlet weak var caloriesLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
 

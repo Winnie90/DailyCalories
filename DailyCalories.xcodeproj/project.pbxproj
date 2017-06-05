@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A894541EE5550E00FCC951 /* FoodInputViewController.swift */; };
 		79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */; };
 		79B46B051EE5491B00EA2189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B46B031EE5491B00EA2189 /* Main.storyboard */; };
 		79B46B071EE5491B00EA2189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B46B061EE5491B00EA2189 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79A894541EE5550E00FCC951 /* FoodInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
 		79B46AFC1EE5491B00EA2189 /* DailyCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B46B041EE5491B00EA2189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79A894531EE554AD00FCC951 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		79B46AF31EE5491B00EA2189 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */,
+				79A894531EE554AD00FCC951 /* Model */,
 				79B46B231EE54A5300EA2189 /* UI */,
 				79B46B241EE54AB300EA2189 /* Resources */,
 			);
@@ -98,6 +108,7 @@
 			children = (
 				79B46B031EE5491B00EA2189 /* Main.storyboard */,
 				79B46B211EE54A4700EA2189 /* BudgetViewController.swift */,
+				79A894541EE5550E00FCC951 /* FoodInputViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */,
 				79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */,
 				79B46B221EE54A4700EA2189 /* BudgetViewController.swift in Sources */,
 			);
@@ -430,6 +442,7 @@
 				79B46B1B1EE5491B00EA2189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79B46B1C1EE5491B00EA2189 /* Build configuration list for PBXNativeTarget "DailyCaloriesTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				79B46B1E1EE5491B00EA2189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
