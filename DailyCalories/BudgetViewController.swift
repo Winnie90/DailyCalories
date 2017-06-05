@@ -9,24 +9,29 @@
 import UIKit
 
 class BudgetViewController: UIViewController {
-
+    
     @IBOutlet weak var caloriesLabel: UILabel!
+    
+    var todaysBudget = Budget(calories: 1900)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        updateCaloriesLabel()
     }
     
+    private func updateCaloriesLabel() {
+        caloriesLabel.text = todaysBudget.getCaloriesWithUnits()
+    }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let foodInputViewController = segue.destination as? FoodInputViewController {
+            foodInputViewController.foodInput = { calories in
+                self.todaysBudget.reduceCalories(calories)
+                self.updateCaloriesLabel()
+            }
+        }
     }
-    */
 
 }
