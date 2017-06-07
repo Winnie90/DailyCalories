@@ -10,6 +10,8 @@ import UIKit
 
 class FoodInputViewController: UIViewController {
 
+    let units: String = "kCal"
+    
     public var foodInput: ((Int) -> (Void))?
         
     @IBOutlet weak var caloriesInput: UITextField!
@@ -19,11 +21,14 @@ class FoodInputViewController: UIViewController {
 
         caloriesInput.becomeFirstResponder()
         caloriesInput.textColor = UIColor.white
+        caloriesInput.delegate = self
     }
     
     private func convertTextToCalories(caloriesText text: String?) -> Int {
-        guard let caloriesAsString = text,
-              let caloriesAsInt = Int(caloriesAsString) else { return 0 }
+        guard let caloriesAsString = text else { return 0 }
+        let index = caloriesAsString.index(caloriesAsString.endIndex, offsetBy: -units.characters.count)
+        let caloriesWithoutUnits = caloriesAsString.substring(to: index)
+        guard let caloriesAsInt = Int(caloriesWithoutUnits) else { return 0 }
         return caloriesAsInt
     }
 
@@ -33,6 +38,20 @@ class FoodInputViewController: UIViewController {
             if let strongSelf = self {
                 strongSelf.foodInput?(calories)
             }
+        }
+    }
+
+}
+
+extension FoodInputViewController : UITextFieldDelegate {
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        if let text = textField.text {
+            textField.text = "\(text)\(units)"
+            let newPosition = textField.beginningOfDocument
+            textField.selectedTextRange = textField.textRange(from: newPosition, to: newPosition)
+        } else {
+            textField.text = ""
         }
     }
 
