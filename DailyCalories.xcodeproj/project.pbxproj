@@ -14,6 +14,7 @@
 		79B46B0A1EE5491B00EA2189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B46B081EE5491B00EA2189 /* LaunchScreen.storyboard */; };
 		79B46B151EE5491B00EA2189 /* DailyCaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46B141EE5491B00EA2189 /* DailyCaloriesTests.swift */; };
 		79B46B221EE54A4700EA2189 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46B211EE54A4700EA2189 /* BudgetViewController.swift */; };
+		79CBEC051EE84DCA0052D510 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBEC041EE84DCA0052D510 /* BudgetViewModel.swift */; };
 		835F71261EE5F90400799DFD /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F71251EE5F90400799DFD /* Budget.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		79B46B141EE5491B00EA2189 /* DailyCaloriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCaloriesTests.swift; sourceTree = "<group>"; };
 		79B46B161EE5491B00EA2189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B46B211EE54A4700EA2189 /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		79CBEC041EE84DCA0052D510 /* BudgetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
 		835F71251EE5F90400799DFD /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				835F71251EE5F90400799DFD /* Budget.swift */,
+				79CBEC041EE84DCA0052D510 /* BudgetViewModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CBEC051EE84DCA0052D510 /* BudgetViewModel.swift in Sources */,
 				79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */,
 				79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */,
 				835F71261EE5F90400799DFD /* Budget.swift in Sources */,

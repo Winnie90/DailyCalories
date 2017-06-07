@@ -10,12 +10,4 @@ import Foundation
 
 struct Budget {
     var calories: Int
-    
-    public func getCaloriesWithUnits() -> String {
-        return "\(calories)kcal"
-    }
-    
-    public mutating func reduceCalories(_ caloriesReduction: Int) {
-        calories = calories - caloriesReduction
-    }
 }

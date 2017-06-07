@@ -12,17 +12,29 @@ class BudgetViewController: UIViewController {
     
     @IBOutlet weak var caloriesLabel: UILabel!
     
-    var todaysBudget = Budget(calories: 1900)
+    var todaysBudget = BudgetViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        updateCaloriesDisplay()
+    }
+    
+    private func updateCaloriesDisplay() {
         updateCaloriesLabel()
+        
+        if todaysBudget.getCalories() < 0 {
+            view.backgroundColor = UIColor.orange
+        } else {
+            view.backgroundColor = UIColor.blue
+        }
     }
     
     private func updateCaloriesLabel() {
-        caloriesLabel.text = todaysBudget.getCaloriesWithUnits()
+        let calories = todaysBudget.getCaloriesWithUnits()
+        caloriesLabel.text = calories
     }
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,7 +42,7 @@ class BudgetViewController: UIViewController {
             let foodInputViewController = navController.topViewController as? FoodInputViewController {
                 foodInputViewController.foodInput = { [unowned self] calories in
                     self.todaysBudget.reduceCalories(calories)
-                    self.updateCaloriesLabel()
+                    self.updateCaloriesDisplay()
                 }
         }
     }
