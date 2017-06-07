@@ -26,11 +26,12 @@ class BudgetViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let foodInputViewController = segue.destination as? FoodInputViewController {
-            foodInputViewController.foodInput = { calories in
-                self.todaysBudget.reduceCalories(calories)
-                self.updateCaloriesLabel()
-            }
+        if let navController = segue.destination as? UINavigationController,
+            let foodInputViewController = navController.topViewController as? FoodInputViewController {
+                foodInputViewController.foodInput = { [unowned self] calories in
+                    self.todaysBudget.reduceCalories(calories)
+                    self.updateCaloriesLabel()
+                }
         }
     }
 

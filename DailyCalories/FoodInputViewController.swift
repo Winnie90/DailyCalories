@@ -10,14 +10,15 @@ import UIKit
 
 class FoodInputViewController: UIViewController {
 
-    var foodInput: (Int) -> ()!
+    public var foodInput: ((Int) -> (Void))?
         
     @IBOutlet weak var caloriesInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        caloriesInput.becomeFirstResponder()
+        caloriesInput.textColor = UIColor.white
     }
     
     private func convertTextToCalories(caloriesText text: String?) -> Int {
@@ -28,8 +29,11 @@ class FoodInputViewController: UIViewController {
 
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
         let calories = convertTextToCalories(caloriesText: caloriesInput.text)
-        foodInput(calories)
-        dismiss(animated: true)
+        dismiss(animated: true) { [weak self] in
+            if let strongSelf = self {
+                strongSelf.foodInput?(calories)
+            }
+        }
     }
 
 }
