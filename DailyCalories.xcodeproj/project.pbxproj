@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79610B231EE986FA009CC052 /* BudgetStorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610B221EE986FA009CC052 /* BudgetStorageAdapter.swift */; };
 		79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A894541EE5550E00FCC951 /* FoodInputViewController.swift */; };
 		79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */; };
 		79B46B051EE5491B00EA2189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B46B031EE5491B00EA2189 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79610B221EE986FA009CC052 /* BudgetStorageAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetStorageAdapter.swift; sourceTree = "<group>"; };
 		79A894541EE5550E00FCC951 /* FoodInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
 		79B46AFC1EE5491B00EA2189 /* DailyCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				835F71251EE5F90400799DFD /* Budget.swift */,
 				79CBEC041EE84DCA0052D510 /* BudgetViewModel.swift */,
+				79610B221EE986FA009CC052 /* BudgetStorageAdapter.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				79CBEC051EE84DCA0052D510 /* BudgetViewModel.swift in Sources */,
 				79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */,
+				79610B231EE986FA009CC052 /* BudgetStorageAdapter.swift in Sources */,
 				79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */,
 				835F71261EE5F90400799DFD /* Budget.swift in Sources */,
 				79B46B221EE54A4700EA2189 /* BudgetViewController.swift in Sources */,
