@@ -16,19 +16,6 @@ struct Budget {
         self.calories = calories
         self.date = date
     }
-    
-    init(dict: Dictionary<String, Any>) {
-        if let calories = dict["calories"] as? Int {
-            self.calories = calories
-        } else {
-            self.calories = 0
-        }
-        if let date = dict["date"] as? Date {
-            self.date = date
-        } else {
-            self.date = Date()
-        }
-    }
 }
 
 extension Budget {

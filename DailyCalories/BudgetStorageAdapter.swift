@@ -16,6 +16,11 @@ struct BudgetStorageAdapter {
     }
     
     public func retrieve() -> Budget {
-        UserDefaults.standard.get("budget")
+        if let budgetDict = UserDefaults.standard.dictionary(forKey: "budget"),
+            let calories = budgetDict["calories"] as? Int,
+                let date = budgetDict["date"] as? Date {
+            return Budget(calories: calories, date: date)
+        }
+        return Budget(calories: 1900, date: Date())
     }
 }

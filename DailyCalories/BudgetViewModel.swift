@@ -10,7 +10,23 @@ import Foundation
 
 class BudgetViewModel : NSObject {
     
-    private var budget = Budget(calories: 1900)
+    private let budgetStorage = BudgetStorageAdapter()
+    private var privateBudget : Budget!
+    
+    private var budget : Budget {
+        get {
+            return privateBudget
+        }
+        set {
+            privateBudget = newValue
+            budgetStorage.store(budget: budget)
+        }
+    }
+    
+    override init() {
+        super.init()
+        budget = budgetStorage.retrieve()
+    }
  
     public func getCaloriesWithUnits() -> String {
         return "\(getCalories())kCal"
@@ -21,7 +37,8 @@ class BudgetViewModel : NSObject {
     }
     
     public func reduceCalories(_ caloriesReduction: Int) {
-        budget = Budget(calories: budget.calories - caloriesReduction)
+        budget = Budget(calories: budget.calories - caloriesReduction,
+                        date: budget.date)
     }
 
 }
