@@ -1,0 +1,6 @@
+framework module Pods_DailyCaloriesTests {
+  umbrella header "Pods-DailyCaloriesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

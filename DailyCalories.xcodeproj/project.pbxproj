@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0552701CE29E11C9034CF1E0 /* Pods_DailyCalories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7386C62337CA89871381E2ED /* Pods_DailyCalories.framework */; };
+		73D09D345C44765E853DEFD7 /* Pods_DailyCaloriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BF0F620826D46511FE9F3 /* Pods_DailyCaloriesTests.framework */; };
 		79610B231EE986FA009CC052 /* BudgetStorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610B221EE986FA009CC052 /* BudgetStorageAdapter.swift */; };
 		798121821F14C5AB005C70F4 /* CaloriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798121811F14C5AB005C70F4 /* CaloriesRequest.swift */; };
+		798121851F14F9B1005C70F4 /* FoodSuggestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798121841F14F9B1005C70F4 /* FoodSuggestionsViewModel.swift */; };
 		79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A894541EE5550E00FCC951 /* FoodInputViewController.swift */; };
 		79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */; };
 		79B46B051EE5491B00EA2189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B46B031EE5491B00EA2189 /* Main.storyboard */; };
@@ -31,8 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32B7A60C4992529A06CE6E23 /* Pods-DailyCaloriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCaloriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyCaloriesTests/Pods-DailyCaloriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CAB8FBB44A02423DF60ED5A /* Pods-DailyCalories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCalories.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyCalories/Pods-DailyCalories.release.xcconfig"; sourceTree = "<group>"; };
+		7386C62337CA89871381E2ED /* Pods_DailyCalories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCalories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79610B221EE986FA009CC052 /* BudgetStorageAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetStorageAdapter.swift; sourceTree = "<group>"; };
 		798121811F14C5AB005C70F4 /* CaloriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesRequest.swift; sourceTree = "<group>"; };
+		798121841F14F9B1005C70F4 /* FoodSuggestionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodSuggestionsViewModel.swift; sourceTree = "<group>"; };
 		79A894541EE5550E00FCC951 /* FoodInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
 		79B46AFC1EE5491B00EA2189 /* DailyCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B46AFF1EE5491B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +53,9 @@
 		79B46B211EE54A4700EA2189 /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		79CBEC041EE84DCA0052D510 /* BudgetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
 		835F71251EE5F90400799DFD /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		8EA3684E9EAFB02FCEA1B1A1 /* Pods-DailyCalories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCalories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyCalories/Pods-DailyCalories.debug.xcconfig"; sourceTree = "<group>"; };
+		EA9C2BD5CF947D02C9B01098 /* Pods-DailyCaloriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCaloriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyCaloriesTests/Pods-DailyCaloriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2BF0F620826D46511FE9F3 /* Pods_DailyCaloriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCaloriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0552701CE29E11C9034CF1E0 /* Pods_DailyCalories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D09D345C44765E853DEFD7 /* Pods_DailyCaloriesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40650C3E5E2F9AF9BA15F7F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7386C62337CA89871381E2ED /* Pods_DailyCalories.framework */,
+				FB2BF0F620826D46511FE9F3 /* Pods_DailyCaloriesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79A894531EE554AD00FCC951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +103,8 @@
 				79B46AFE1EE5491B00EA2189 /* DailyCalories */,
 				79B46B131EE5491B00EA2189 /* DailyCaloriesTests */,
 				79B46AFD1EE5491B00EA2189 /* Products */,
+				BD7F63B1E9DDBFA306CD216C /* Pods */,
+				40650C3E5E2F9AF9BA15F7F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +143,7 @@
 				79B46B031EE5491B00EA2189 /* Main.storyboard */,
 				79B46B211EE54A4700EA2189 /* BudgetViewController.swift */,
 				79A894541EE5550E00FCC951 /* FoodInputViewController.swift */,
+				798121841F14F9B1005C70F4 /* FoodSuggestionsViewModel.swift */,
 				798121811F14C5AB005C70F4 /* CaloriesRequest.swift */,
 			);
 			name = UI;
@@ -135,6 +159,17 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		BD7F63B1E9DDBFA306CD216C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA3684E9EAFB02FCEA1B1A1 /* Pods-DailyCalories.debug.xcconfig */,
+				3CAB8FBB44A02423DF60ED5A /* Pods-DailyCalories.release.xcconfig */,
+				EA9C2BD5CF947D02C9B01098 /* Pods-DailyCaloriesTests.debug.xcconfig */,
+				32B7A60C4992529A06CE6E23 /* Pods-DailyCaloriesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79B46B191EE5491B00EA2189 /* Build configuration list for PBXNativeTarget "DailyCalories" */;
 			buildPhases = (
+				81650073F90E91C3FEAA4EB4 /* [CP] Check Pods Manifest.lock */,
 				79B46AF81EE5491B00EA2189 /* Sources */,
 				79B46AF91EE5491B00EA2189 /* Frameworks */,
 				79B46AFA1EE5491B00EA2189 /* Resources */,
+				E6F4934D74223B468900EBCC /* [CP] Embed Pods Frameworks */,
+				3CDB00C3DF350B6EA8924816 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79B46B1C1EE5491B00EA2189 /* Build configuration list for PBXNativeTarget "DailyCaloriesTests" */;
 			buildPhases = (
+				3D5D6D081608C943F7BDC80B /* [CP] Check Pods Manifest.lock */,
 				79B46B0C1EE5491B00EA2189 /* Sources */,
 				79B46B0D1EE5491B00EA2189 /* Frameworks */,
 				79B46B0E1EE5491B00EA2189 /* Resources */,
+				B94609DFC85E82170AE42404 /* [CP] Embed Pods Frameworks */,
+				781B88E1E672C85F1450A618 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +276,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CDB00C3DF350B6EA8924816 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyCalories/Pods-DailyCalories-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D5D6D081608C943F7BDC80B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		781B88E1E672C85F1450A618 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyCaloriesTests/Pods-DailyCaloriesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81650073F90E91C3FEAA4EB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B94609DFC85E82170AE42404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyCaloriesTests/Pods-DailyCaloriesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F4934D74223B468900EBCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyCalories/Pods-DailyCalories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79B46AF81EE5491B00EA2189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +376,7 @@
 			files = (
 				79CBEC051EE84DCA0052D510 /* BudgetViewModel.swift in Sources */,
 				79A894551EE5550E00FCC951 /* FoodInputViewController.swift in Sources */,
+				798121851F14F9B1005C70F4 /* FoodSuggestionsViewModel.swift in Sources */,
 				79610B231EE986FA009CC052 /* BudgetStorageAdapter.swift in Sources */,
 				79B46B001EE5491B00EA2189 /* AppDelegate.swift in Sources */,
 				835F71261EE5F90400799DFD /* Budget.swift in Sources */,
@@ -385,6 +520,7 @@
 		};
 		79B46B1A1EE5491B00EA2189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA3684E9EAFB02FCEA1B1A1 /* Pods-DailyCalories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
@@ -398,6 +534,7 @@
 		};
 		79B46B1B1EE5491B00EA2189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB8FBB44A02423DF60ED5A /* Pods-DailyCalories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
@@ -411,6 +548,7 @@
 		};
 		79B46B1D1EE5491B00EA2189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9C2BD5CF947D02C9B01098 /* Pods-DailyCaloriesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +564,7 @@
 		};
 		79B46B1E1EE5491B00EA2189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32B7A60C4992529A06CE6E23 /* Pods-DailyCaloriesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
