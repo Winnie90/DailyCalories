@@ -16,7 +16,6 @@ class BudgetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         updateCaloriesDisplay()
     }
     
