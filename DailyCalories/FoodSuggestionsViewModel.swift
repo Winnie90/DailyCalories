@@ -14,10 +14,7 @@ struct CalorieSuggestion {
 }
 
 struct FoodSuggestionsViewModel {
-    
-    public func getSuggestions(for: String) -> [CalorieSuggestion] {
-        CaloriesRequest().getSuggestions(for: <#T##String#>) { (<#String#>, <#String?#>) in
-            <#code#>
-        }
+    public func getSuggestions(forInput: String) -> [CalorieSuggestion] {
+       return []
     }
 }

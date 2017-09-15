@@ -34,7 +34,6 @@ class BudgetViewController: UIViewController {
         caloriesLabel.text = calories
     }
     
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navController = segue.destination as? UINavigationController,

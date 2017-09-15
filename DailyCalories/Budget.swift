@@ -11,7 +11,6 @@ import Foundation
 struct Budget {
     var calories: Int
     var date: Date
-    
     init(calories: Int, date: Date) {
         self.calories = calories
         self.date = date
@@ -19,7 +18,7 @@ struct Budget {
 }
 
 extension Budget {
-    func encode() -> Dictionary<String, Any> {
+    func encode() -> [String: Any] {
         return [
             "calories": calories,
             "date": date

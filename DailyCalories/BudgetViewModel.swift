@@ -8,12 +8,12 @@
 
 import Foundation
 
-class BudgetViewModel : NSObject {
+class BudgetViewModel: NSObject {
     
     private let budgetStorage = BudgetStorageAdapter()
-    private var privateBudget : Budget!
+    private var privateBudget: Budget!
     
-    private var budget : Budget {
+    private var budget: Budget {
         get {
             return privateBudget
         }
@@ -35,7 +35,7 @@ class BudgetViewModel : NSObject {
     public func getCalories() -> Int {
         return budget.calories
     }
-    
+
     public func reduceCalories(_ caloriesReduction: Int) {
         budget = Budget(calories: budget.calories - caloriesReduction,
                         date: budget.date)

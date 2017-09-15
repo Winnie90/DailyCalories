@@ -9,12 +9,10 @@
 import Foundation
 
 struct BudgetStorageAdapter {
-    
     public func store(budget: Budget) {
         UserDefaults.standard.set(budget.encode(), forKey: "budget")
         UserDefaults.standard.synchronize()
     }
-    
     public func retrieve() -> Budget {
         if let budgetDict = UserDefaults.standard.dictionary(forKey: "budget"),
             let calories = budgetDict["calories"] as? Int,

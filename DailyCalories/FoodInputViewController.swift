@@ -11,8 +11,7 @@ import UIKit
 class FoodInputViewController: UIViewController {
 
     let units: String = "kCal"
-    
-    public var foodInput: ((Int) -> (Void))?
+    public var foodInput: ((Int) -> Void)?
         
     @IBOutlet weak var caloriesInputTextField: UITextField!
     @IBOutlet weak var foodInputTextField: UITextField!
@@ -42,11 +41,11 @@ class FoodInputViewController: UIViewController {
         }
     }
     
-    public func textFieldDidChange(_ textField: UITextField) {
-        if let text = textField.text {
-            CaloriesRequest().getCaloriesForFood(foodName: text, callback: {result, error in
-                print(result)
-            })
-        }
+    @objc public func textFieldDidChange(_ textField: UITextField) {
+//        if let text = textField.text {
+//            CaloriesRequest().getCaloriesForFood(foodName: text, callback: {result, error in
+//                print(result)
+//            })
+//        }
     }
 }
